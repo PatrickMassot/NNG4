@@ -14,7 +14,7 @@ right hand side (a computer scientist would say \"definitionally equal\"). I rea
 For example, `x * y + z = x * y + z` can be proved by `rfl`, but `x + y = y + x` cannot.
 This is a very low level spell, but you need to start somewhere.
 
-After closing that message, type rfl in the invocation zone and hit Enter or click 
+After closing this message, type rfl in the invocation zone and hit Enter or click 
 the \"Cast spell\" button.
 "
 
