@@ -10,7 +10,9 @@ It uses the [Lean 4 game server](https://github.com/PatrickMassot/lean4-game-ser
 
 A temporary hack in `Main.lean` assumes you have the game-server library installed in a `game-server` folder sitting next to your `NNG4` folder. Hopefully this will be fixed soon. Until then you can either make sure you have this folder layout or modify `Main.lean` before building. Once this is done, you can build using `lake build` in the NNG4 root folder (this will build the game server if needed).
  
-Then you can already "play" in text mode by running `build/bin/nng`. If you want to run the web interface you need to launch the `gameserver.py` python script (after installing the `websockets` python library). This will use port 8765 by default, but you can set the `PORT` environment variable to override this (or modify the python code...). 
+Then you can already "play" in text mode by running `build/bin/nng`. If you want to run the web interface you need to launch the `gameserver.py` python script (after installing the `websockets` python library). This will use port 8765 by default, but you can set the `PORT` environment variable to override this (or modify the python code...). If you want the server to be accessible
+from the outside you may need to use `gameserver_ssl.py` in order to satisfy
+paranoid web browser. This requires some SSL certificate (see https://letsencrypt.org/ to get one if needed). There are more explanation at the top of that python script.
 
 Then you need to clone the [interface repository](https://github.com/PatrickMassot/nng4-interface) and build the interface. See instructions there.
 
