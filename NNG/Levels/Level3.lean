@@ -68,7 +68,7 @@ That goal is of the form `X = X`, so you know what to do.
 Conclusion "Congratulations for completing the third level! 
 You may be wondering whether we could have just substituted in the definition of `b`
 and proved the goal that way. To do that, we would want to replace the right hand
-side of `h` with the left hand side. You do this in Lean by writing `rewrite ← h`. You get the
+side of `h` with the left hand side. You do this in Lean by writing `rewrite [<- h]`. You get the
 left-arrow by typing `\\l` and then a space; note that this is a small letter L,
 not a number 1. You can just edit your proof and try it. 
 
